@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Educe Homeschool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html" class="icon">Educ<span class="icone">e</span></a>
+        <div class="navlinks" id="navLinks">
+          <img
+            src="icons/close-icon.png"
+            class="mobile-icon"
+            alt="close button"
+            onclick="HideMenu()"
+          />
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Compare&nbsp;products</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <img
+          src="icons/three-horizontal-lines-icon.png"
+          class="mobile-icon"
+          alt="close button"
+          onclick="ShowMenu()"
+        />
+      </nav>
+      <div class="alignment">
+        <div class="text-box">
+          <h1>Educe Namibia</h1>
+          <p>The World's Best Way To <em>Homeschool</em></p>
+          <a href="" class="primary-button">Sign up your kid today</a>
+        </div>
+      </div>
+    </section>
+    <section class="Easy">
+      <div class="text-boxes">
+        <div class="text-box-2">
+          <h2>Easy and convienent <em>Online&nbsp;Learning</em></h2>
+          <p>
+            As long as your child has a laptop, tablet or phone, our state of
+            the art education programs will make learning hasle free.
+          </p>
+        </div>
+        <div class="text-box-2">
+          <h2>Fun and engaging</h2>
+          <p>
+            Students find Mobymax, Study Island and Wolkskool to be leauges more fun and engaging compared to traditional schooling.
+          </p>
+        </div>
+      </div>
+      <img
+        src="Images/studing.jpg"
+        class="side-img"
+        alt="kid studing"
+        width="100%"
+      />
+    </section>
+    <section class="Programs">
+      <div class="text-box-3">
+        <h2>Our Education Programs</h2>
+        <a href="" class="compare-plans">Compare Programs <img src="icons/line-angle-right-icon.png" height="20rem"></a>
+      </div>
+      <div class="Program-List">
+        <img src="icons/wolkskool.svg" class="program-item" />
+        <img src="icons/mobymaxlogo-horizontal.png" class="program-item" />
+        <img src="icons/SI_color.png" class="program-item" />
+        <img src="icons/ged-logo.svg" class="program-item" />
+        <img src="icons/TABE.png" class="program-item" />
+      </div>
+    </section>
+    <!--
+    Section for mobymax
+    <section>
+      <div class="experience">
+        <h2><em>7 Years</em> of <em>education experience</em></h2>
+        <p>
+          We have been teaching children on mobymax since 2017, only seven years
+          since it's original debeu in amarica! Us, being the
+          <em> first&nbsp;Mobymax&nbsp;distributers </em> to bring mobymax into
+          Namibia. We know the ins and outs of mobymax better than any
+          altenetive
+         </p>
+    </section>
+    -->
+    <section class="why">
+      <h2>Why choose us?</em></h2>
+        <ul>
+          <li>7 Years of experience</li>
+          <li>Competitive pricing</li>
+          <li>We care about your child's Education</li>
+          <li>Quality support between 8:00 - 16:00</li>
+          <li>Monthly progress reports</li>
+          <li>Mentoring and Monitoring</li>
+        </ul>
+    </section>
+    <section class="MnM Easy">
+      <div class="text-box-2">
+        
+        <h2>Mentoring and Monitoring</h2>
+        <p>
+          or "M&M" is a service where we put your child into a whatsapp chat with one of our tutors so they can call or message for help at any time.
+          The tutor does regular checkups on your child to ensure they're on track with their school. <br/><br/>
+          Recomended if you don't have the time to do regular chackups on your child or if you don't have time to learn mobymax's parental interface
+            </p>
+            <a href="" class="primary-button">Join M&M today</a>
+      </div>
+      <img src="Images/learning together.jpg" alt="a mom and her child learning together" class="side-img">
+    </section>
+    <section class="cta">
+        <h2>Educe Namibia</h2>
+        <a href="" class="primary-button">Start Homeschooling today</a>
+    </section>
+    <script>
+      var navlinks = document.getElementById("navLinks");
+
+      function ShowMenu() {
+        navlinks.style.right = "0";
+      }
+      function HideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

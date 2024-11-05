@@ -1,0 +1,385 @@
+:root {
+    --primary-color: #46B629; /* Define the variable */
+    --links:#007c92;
+  }
+html{
+    scrollbar-color:var(--primary-color) rgb(0, 33, 8) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans Ethiopic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/clean\ learning\ desk.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+.alignment{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content:center;
+    z-index: 0;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 800;
+    transition: 1s;
+}
+.icon:hover .icone{
+    display: inline-flex;
+    transform: rotate(90deg);
+    transform-origin: 50% 60%; /* Adjust percentages to control the center */
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.84, 0);
+}
+.icone{
+    display: inline-flex;
+    transform-origin: 50% 60%; /* Ensure same origin on un-hover */
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+.navlinks{
+    text-align: right;
+    cursor: pointer;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+    transition:0.1s;
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 0.125rem;
+    background-color: var(--primary-color);
+    display: block;
+    margin: auto;
+    transition: 0.4s cubic-bezier(0.7, 0, 0.84, 0);
+}
+.navlinks ul li:hover a{
+    color: var(--primary-color);
+}
+.navlinks ul li:hover{
+    font-weight: 600;
+   
+}
+.navlinks ul li:hover::after{
+    content: '';
+    width: 100%;
+}
+.text-box{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 90%;
+    color: var(--primary-color);
+    position: absolute;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 8rem;
+}
+.text-box p{
+    font-size: 3rem;
+    color: white;
+}
+
+em{
+    text-decoration: underline var(--primary-color);
+}
+
+.primary-button{
+    align-self: center;
+    flex-shrink: 1;
+    margin: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 2.125rem;
+    font-size: 1rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: var(--primary-color);
+    border: solid;
+}
+.primary-button:hover{
+    
+}
+.mobile-icon{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 10px; /* or any other value you prefer */
+      }
+      .navlinks ul li a{
+        display: block;
+        font-size: 2rem;
+      }
+      .navlinks ul li{
+        display: block;
+        padding-left: 2rem;
+      }
+      .navlinks{
+        position: absolute;
+        background: var(--primary-color);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        cursor: default;
+        z-index: 2;
+        transition: 1s;
+      }
+      .mobile-icon{
+        display: block;
+        width: 2rem;
+        color: white;
+        padding: 2rem 2rem 1rem;
+        cursor: pointer;
+      }
+  }
+
+.Easy{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+    
+}
+.text-boxes{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: left;
+}
+.text-box-2{
+    display: flex;
+    align-self: left;
+    flex-direction: column;
+    color: var(--primary-color);
+    text-align: left;
+    max-width:50vw;
+    margin: 5%;
+}
+.text-box-2 h2{
+    font-size: 3rem;
+}
+.text-box-2 p{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.Programs{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(white,rgba(0, 0, 0, 0.4));
+}
+.text-box-3{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.text-box-3 h2{
+    font-size: 3rem;
+}
+.text-box-3 p{
+    color: black;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 10%;
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/parents\ and\ papers.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 10%;
+}
+.experience h2{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 8rem;
+}
+.experience p{
+    color: white;
+    text-align: left;
+    font-size: 3rem;
+}
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/house.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 10%;
+}
+.cta h2{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 8rem;
+}
+.cta p{
+    color: white;
+    text-align: left;
+    font-size: 3rem;
+}
+.Program-List{
+    display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-evenly;
+   padding-bottom: 2rem;
+}
+.Program-List img{
+    height: 5rem;
+}
+.side-img{
+    justify-self: right;
+    width: 50vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+
+.compare-plans{
+    display: block;
+    text-align: center;
+    align-self: center;
+    width: max-content;
+    color: var(--links);
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.compare-plans::after{
+    content: '';
+    width: 0%;
+    height: 0.125rem;
+    background-color: var(--links);
+    display: block;
+    transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.compare-plans:hover{
+    font-weight: 600;
+}
+.compare-plans:hover::after{
+    content: '';
+    width: 100%;
+}
+.why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/thinking.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 10%;
+}
+.why h2{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 8rem;
+}
+.why li{
+    color: white;
+    text-align: left;
+    font-size: 3rem;
+}
+.cta{
+    background-image: linear-gradient(),url(Images/house.jpg);
+}
+@media screen and (max-width: 1600px){
+    .experience h2{
+        font-size: 6rem;
+    }
+    .experience p{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1300px){
+    .side-img{
+        display: none;
+    }
+    .text-box-2{
+        max-width: 100%;
+    }
+    .text-box-2 p{
+        color: white;
+    }
+    .text-box-2 h2{
+        text-align: center;
+        color: white;
+    }
+    .Easy{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/studing.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .why h2{
+        font-size: 4rem;
+    }
+    .why li{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1200px){
+    .experience h2{
+        font-size: 5rem;
+        
+    }
+    .experience p{
+        font-size: 1.5rem;
+    }
+}
