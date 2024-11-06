@@ -30,6 +30,9 @@ html{
 .our-products{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/business\ man.jpg);
 }
+.about-us{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/about\ us.jpg);
+}
 .alignment{
     display: flex;
     flex-grow: 1;
@@ -347,9 +350,10 @@ em{
     border-collapse: collapse;
     display: flex;
     flex-direction: column;
-    align-self: center;
-    margin: 10%;
+    align-items: center;
+    padding: 10%;
     margin-top: 5%;
+    
 }
 .products-cell{
     max-width: 10rem;
@@ -362,11 +366,24 @@ em{
     text-align: center;
     border-radius: 1rem;
 }
+.container{
+    overflow-x: scroll;
+}
 .products-cell-bold{
     font-weight: bold;
 }
 .products-cell-shaded{
     background-color: var(--primary-color);
+}
+.X::after{
+    content: "\2715";
+    font-size: 1.5rem;
+    color: red;
+}
+.check::after{
+    content: "\2714";
+    font-size: 1.5rem;
+    color: green;
 }
 @media screen and (max-width: 1600px){
     .experience h2{
@@ -447,9 +464,5 @@ em{
         color: white;
         padding: 2rem 2rem 1rem;
         cursor: pointer;
-      }
-      .product-comparison{
-        margin: 0%;
-        margin-bottom: 10%;
       }
   }
