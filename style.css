@@ -346,28 +346,35 @@ em{
 .MnM{
     z-index: -1;
 }
+table {
+    width: 100%;
+    font-size: 1rem;
+    display: inline-table;
+    padding: 10%;
+  }
+  .container {
+    width: 100%;
+    overflow-x: auto;
+    
+  }
 .product-comparison{
     border-collapse: collapse;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10%;
+    align-self: center;
+    margin: 10%;
     margin-top: 5%;
-    
 }
 .products-cell{
-    max-width: 10rem;
     font-size: 0.9rem;
     font-weight: normal;
     padding: 0.5rem 1rem;
     color: black;
     border: 0.25rem solid var(--primary-color);
-    line-height: 1.4;
     text-align: center;
     border-radius: 1rem;
-}
-.container{
-    overflow-x: scroll;
+    min-width: 10rem;
+    white-space: wrap;
 }
 .products-cell-bold{
     font-weight: bold;
@@ -375,15 +382,15 @@ em{
 .products-cell-shaded{
     background-color: var(--primary-color);
 }
-.X::after{
-    content: "\2715";
-    font-size: 1.5rem;
-    color: red;
-}
 .check::after{
     content: "\2714";
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: green;
+}
+.X::after{
+    content: "\2716";
+    font-size: 2rem;
+    color: red;
 }
 @media screen and (max-width: 1600px){
     .experience h2{
@@ -464,5 +471,9 @@ em{
         color: white;
         padding: 2rem 2rem 1rem;
         cursor: pointer;
+      }
+      .product-comparison{
+        margin: 0%;
+        margin-bottom: 10%;
       }
   }
