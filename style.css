@@ -15,15 +15,20 @@ html{
     font-variation-settings:"wdth" 100;
 }
 .header{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/clean\ learning\ desk.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+.landing-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/clean\ learning\ desk.jpg);
+}
+.our-products{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/business\ man.jpg);
 }
 .alignment{
     display: flex;
@@ -37,6 +42,7 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .icon{
     font-size: 2rem;
@@ -60,6 +66,7 @@ nav{
 .navlinks{
     text-align: right;
     cursor: pointer;
+    text-wrap-mode: nowrap;
 }
 .navlinks ul li{
     list-style: none;
@@ -94,6 +101,7 @@ nav{
     content: '';
     width: 100%;
 }
+
 .text-box{
     display: flex;
     align-self: center;
@@ -128,6 +136,8 @@ em{
     cursor: pointer;
     color: var(--primary-color);
    transition: 0.3s;
+   z-index: 2;
+   border-radius: 1rem;
 }
 .primary-button::before{
     content: '';
@@ -138,8 +148,9 @@ em{
     bottom: 0;
     background-color: transparent;
     border: solid var(--primary-color);
-    z-index: -1;
-    transition: top, left, right, bottom, 0.3s;
+    z-index: 1;
+    transition: top, left, right, bottom, 0.3s cubic-bezier(0.7, 0, 0.84, 0);
+    border-radius: 1rem;
 }
 .primary-button:hover::before{
     top:-1rem;
@@ -147,7 +158,8 @@ em{
     left:-1rem;
     right:-1rem;
     border: solid var(--primary-color);
-    transition: top, left, right, bottom, 0.3s;
+    border-radius: 1.5rem;
+    transition: top, left, right, bottom, 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 .primary-button:hover{
     background-color: var(--primary-color);
@@ -156,38 +168,6 @@ em{
 .mobile-icon{
     display: none;
 }
-@media screen and (max-width: 700px) {
-    html {
-        font-size: 10px; /* or any other value you prefer */
-      }
-      .navlinks ul li a{
-        display: block;
-        font-size: 2rem;
-      }
-      .navlinks ul li{
-        display: block;
-        padding-left: 2rem;
-      }
-      .navlinks{
-        position: absolute;
-        background: var(--primary-color);
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        cursor: default;
-        z-index: 2;
-        transition: 1s;
-      }
-      .mobile-icon{
-        display: block;
-        width: 2rem;
-        color: white;
-        padding: 2rem 2rem 1rem;
-        cursor: pointer;
-      }
-  }
 
 .Easy{
     display: flex;
@@ -258,6 +238,7 @@ em{
     background-size: cover;
     position: relative;
     padding: 0 10%;
+    z-index: 0;
 }
 .experience h2{
     color: var(--primary-color);
@@ -281,16 +262,12 @@ em{
     background-size: cover;
     position: relative;
     padding: 0 10%;
+    z-index: 0;
 }
 .cta h2{
     color: var(--primary-color);
     text-align: center;
     font-size: 8rem;
-}
-.cta p{
-    color: white;
-    text-align: left;
-    font-size: 3rem;
 }
 .Program-List{
     display: flex;
@@ -298,6 +275,11 @@ em{
    align-items: flex-start;
    justify-content: space-evenly;
    padding-bottom: 2rem;
+   border-radius: 2rem;
+}
+.products-page-list{
+    padding: 2rem;
+    background-color: #45b62960;
 }
 .Program-List img{
     height: 5rem;
@@ -358,8 +340,33 @@ em{
     text-align: left;
     font-size: 3rem;
 }
-.cta{
-    background-image: linear-gradient(),url(Images/house.jpg);
+.MnM{
+    z-index: -1;
+}
+.product-comparison{
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 10%;
+    margin-top: 5%;
+}
+.products-cell{
+    max-width: 10rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+    padding: 0.5rem 1rem;
+    color: black;
+    border: 0.25rem solid var(--primary-color);
+    line-height: 1.4;
+    text-align: center;
+    border-radius: 1rem;
+}
+.products-cell-bold{
+    font-weight: bold;
+}
+.products-cell-shaded{
+    background-color: var(--primary-color);
 }
 @media screen and (max-width: 1600px){
     .experience h2{
@@ -388,6 +395,12 @@ em{
         background-position: center;
         background-size: cover;
     }
+    .MnM{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/learning\ together.jpg);
+        background-position: center;
+        background-size: cover; 
+        z-index: -1;
+    }
     .why h2{
         font-size: 4rem;
     }
@@ -404,3 +417,39 @@ em{
         font-size: 1.5rem;
     }
 }
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 10px; /* or any other value you prefer */
+      }
+      .navlinks ul li a{
+        display: block;
+        font-size: 2rem;
+      }
+      .navlinks ul li{
+        display: block;
+        padding-left: 2rem;
+      }
+      .navlinks{
+        position: absolute;
+        background: var(--primary-color);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        cursor: default;
+        z-index: 2;
+        transition: 1s;
+      }
+      .mobile-icon{
+        display: block;
+        width: 2rem;
+        color: white;
+        padding: 2rem 2rem 1rem;
+        cursor: pointer;
+      }
+      .product-comparison{
+        margin: 0%;
+        margin-bottom: 10%;
+      }
+  }

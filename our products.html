@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Educe Homeschool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header our-products">
+      <nav>
+        <a href="index.html" class="icon">Educ<span class="icone">e</span></a>
+        <div class="navlinks" id="navLinks">
+          <img
+            src="icons/close-icon.png"
+            class="mobile-icon"
+            alt="close button"
+            onclick="HideMenu()"
+          />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our products.html">Our&nbsp;products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <img
+          src="icons/three-horizontal-lines-icon.png"
+          class="mobile-icon"
+          alt="close button"
+          onclick="ShowMenu()"
+        />
+      </nav>
+      <div class="alignment">
+        <div class="text-box">
+          <h1>Our Products</h1>
+          <div class="Program-List products-page-list">
+            <img src="icons/mobymaxlogo-horizontal.png" class="program-item" />
+            <img src="icons/SI_color.png" class="program-item" />
+            <img src="icons/ged-logo.svg" class="program-item" />
+            <img src="icons/TABE.png" class="program-item" />
+            <img src="icons/wolkskool.svg" class="program-item" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
+      <div class="experience">
+        <h2><em>7 Years</em> of <em>Mobymax</em></h2>
+        <p>
+          We have been teaching children on Mobymax since 2017, only seven years
+          since it was first released! Us, being the
+          <em> first Mobymax distributers </em> to bring mobymax into
+          Namibia. We know the ins and outs of mobymax better than anyone else in Namibia!
+         </p>
+         <a href="" class="primary-button">Learn more about Mobymax</a>
+    </section> -->
+    <section class="product-comparison">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th class="products-cell products-cell-bold products-cell-shaded">
+              Mobymax
+            </th>
+            <th class="products-cell products-cell-bold products-cell-shaded">
+              Study Island
+            </th>
+            <th class="products-cell products-cell-bold products-cell-shaded">
+              Wolkskool
+            </th>
+            <th class="products-cell products-cell-bold products-cell-shaded">
+              GED
+            </th>
+            <th class="products-cell products-cell-bold products-cell-shaded">
+              TABE
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="products-cell">Education range</td>
+            <td class="products-cell">kk-Grade 10</td>
+            <td class="products-cell">Grade 1-8</td>
+            <td class="products-cell">Grade 1-12</td>
+            <td class="products-cell">Post-school</td>
+            <td class="products-cell">Post-school</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script>
+      var navlinks = document.getElementById("navLinks");
+
+      function ShowMenu() {
+        navlinks.style.right = "0";
+      }
+      function HideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
