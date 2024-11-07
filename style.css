@@ -35,6 +35,7 @@ a{
 }
 .about-us{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/about\ us.jpg);
+    background-position: right;
 }
 .alignment{
     display: flex;
@@ -209,8 +210,7 @@ em{
     flex-direction: column;
     justify-content: top;
     width: 100%;
-    text-align: center;
-    background-image: linear-gradient(white,rgba(0, 0, 0, 0.4));
+    text-align: center;  
     min-height: 20vh;
 
 }
@@ -395,6 +395,97 @@ table {
     font-size: 2rem;
     color: red;
 }
+.products-recap{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.expandable{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-size: 2rem;
+    max-width: 80%;
+    
+}
+.expandable-open .expandable-content-wrapper{
+ grid-template-rows: 1fr;
+ transition-delay:0.1s;
+}
+.expandable-open .expandable-content{
+    padding: 1rem;
+    border: solid var(--primary-color);
+    border-top: none;
+    background-color: #45b6292a;
+    font-size: 1.5rem;
+    color: black;
+}
+.expandable-open .expandable-icon{
+    transform: rotate(90deg);
+}
+.expandable-open .expandable-bar{
+    grid-template-rows: 1fr;
+    border-radius: 1rem 1rem 0 0;
+    transition: 0.1s;
+    transition-delay: 0s;
+   }
+.expandable-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    user-select: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: 0.2s;
+    transition-delay: 0.3s;
+}
+.expandable-icon{
+    transition: transform 0.5s;
+}
+.expandable-content{
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: transparent;
+    background-color: #45b62900;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 1.5rem;
+    border: solid transparent;
+    border-top: none;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay:0.1s;
+}
+.expandable-content-wrapper{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.5s;
+    transition-delay:0s;
+}
+ul.mnm-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+ul.mnm-list li {
+    position: relative;
+    padding-left: 2rem; /* Space for the simulated checkbox */
+    font-size: 1.5rem; /* Adjust text size if needed */
+}
+
+ul.mnm-list li::before {
+    content: '✔'; /* Unicode character for a checkmark */
+    position: absolute;
+    left: 0; /* Position the checkmark on the left */
+    top: 0;
+    font-size: 1.75rem; /* Adjust checkmark size */
+    color: green; /* Checkmark color */
+}
+
+
 @media screen and (max-width: 1600px){
     .experience h2{
         font-size: 6rem;
