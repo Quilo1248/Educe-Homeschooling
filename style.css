@@ -28,13 +28,13 @@ a{
     width: 100%;
 }
 .landing-page{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/clean\ learning\ desk.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/clean\ learning\ desk.webp);
 }
 .our-products{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/business\ man.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/business\ man.webp);
 }
 .about-us{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/about\ us.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/about\ us.webp);
     background-position: right;
 }
 .alignment{
@@ -239,7 +239,7 @@ em{
     align-content: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/parents\ and\ papers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/parents\ and\ papers.webp);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -263,7 +263,7 @@ em{
     align-content: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/house.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/house.webp);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -330,7 +330,7 @@ em{
     align-content: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/thinking.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/thinking.webp);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -509,14 +509,14 @@ ul.mnm-list li::before {
         color: white;
     }
     .Easy{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/studing.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/studing.webp);
         background-position: center;
         background-size: cover;
         overflow: hidden;
         min-height: 100vh;
     }
     .MnM{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/learning\ together.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/learning\ together.webp);
         background-position: center;
         background-size: cover; 
         min-height: 100vh;
@@ -585,7 +585,7 @@ ul.mnm-list li::before {
         align-content: center;
         justify-content: center;
         min-height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/house.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/house.webp);
         background-position: center;
         background-size: cover;
         position: relative;
