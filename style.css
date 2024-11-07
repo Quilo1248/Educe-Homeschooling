@@ -14,6 +14,9 @@ html{
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
+a{
+    color: var(--links);
+}
 .header{
     background-position: center;
     background-size: cover;
@@ -38,6 +41,7 @@ html{
     flex-grow: 1;
     flex-direction: column;
     justify-content:center;
+    padding: 0% 10%;
     z-index: 0;
 }
 nav{
@@ -153,13 +157,13 @@ em{
     border: solid var(--primary-color);
     z-index: 1;
     transition: top, left, right, bottom, 0.3s cubic-bezier(0.7, 0, 0.84, 0);
-    border-radius: 1rem;
+    border-radius: 1em;
 }
 .primary-button:hover::before{
-    top:-1rem;
-    bottom:-1rem;
-    left:-1rem;
-    right:-1rem;
+    top:-1em;
+    bottom:-1em;
+    left:-1em;
+    right:-1em;
     border: solid var(--primary-color);
     border-radius: 1.5rem;
     transition: top, left, right, bottom, 0.3s cubic-bezier(0.33, 1, 0.68, 1);
@@ -174,11 +178,8 @@ em{
 
 .Easy{
     display: flex;
-    width: 100%;
     flex-direction: row;
     align-items: center;
-    height: 80vh;
-    
 }
 .text-boxes{
     display: flex;
@@ -210,6 +211,8 @@ em{
     width: 100%;
     text-align: center;
     background-image: linear-gradient(white,rgba(0, 0, 0, 0.4));
+    min-height: 20vh;
+
 }
 .text-box-3{
     display: flex;
@@ -235,7 +238,7 @@ em{
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/parents\ and\ papers.jpg);
     background-position: center;
     background-size: cover;
@@ -259,7 +262,7 @@ em{
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/house.jpg);
     background-position: center;
     background-size: cover;
@@ -326,12 +329,12 @@ em{
     align-items: center;
     align-content: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/thinking.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    padding: 0 10%;
+    padding: 10% 10%;
 }
 .why h2{
     color: var(--primary-color);
@@ -418,11 +421,14 @@ table {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/studing.jpg);
         background-position: center;
         background-size: cover;
+        overflow: hidden;
+        min-height: 100vh;
     }
     .MnM{
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/learning\ together.jpg);
         background-position: center;
         background-size: cover; 
+        min-height: 100vh;
         z-index: -1;
     }
     .why h2{
@@ -443,7 +449,7 @@ table {
 }
 @media screen and (max-width: 700px) {
     html {
-        font-size: 10px; /* or any other value you prefer */
+        font-size: 10px;
       }
       .navlinks ul li a{
         display: block;
@@ -456,7 +462,7 @@ table {
       .navlinks{
         position: absolute;
         background: var(--primary-color);
-        height: 100vh;
+        height: 100%;
         width: 200px;
         top: 0;
         right: -200px;
@@ -476,4 +482,39 @@ table {
         margin: 0%;
         margin-bottom: 10%;
       }
+      .primary-button{
+        font-size: 2rem;
+      }
+  }
+  @media screen and (max-height: 700px) {
+    .cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/house.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        padding: 30% 10%;
+        z-index: 0;
+    }
+    .alignment{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content:center;
+        padding: 40% 10%;
+        z-index: 0;
+    }
+    ..Easy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 80vh;
+        padding: 10%;
+        overflow: hidden;
+    }
   }
