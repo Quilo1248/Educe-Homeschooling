@@ -34,8 +34,10 @@ a{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/business\ man.webp);
 }
 .about-us{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(84, 84, 84, 0.7)),url(Images/about\ us.webp);
-    background-position: right;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(Images/parents\ and\ papers.webp);
+}
+.about-us p{
+    text-align: left;
 }
 .alignment{
     display: flex;
@@ -457,7 +459,7 @@ table {
     border-top: none;
     overflow: hidden;
     transition: 0.5s;
-    transition-delay:0.1s;
+    transition-delay:0.05s;
 }
 .expandable-content-wrapper{
     display: grid;
